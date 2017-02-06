@@ -1,8 +1,15 @@
 /**
  * Created by granevich on 06.05.2016.
  */
-document.onload = function () {
-    particlesJS.load('particles-js', 'data/particlesjs-config(1).json', function() {
-        console.log('callback - particles.js config loaded');
-    });
-};
+
+
+$(document).ready(function () {
+    $('.preloader').show();
+    $('.card').css('filter','blur(5px)');
+
+    setTimeout(function () {
+        $('.preloader').hide();
+        $('.card').css('filter','blur(0)');
+    }, 1500)
+
+});
