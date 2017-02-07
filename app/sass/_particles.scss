@@ -44,6 +44,7 @@ div.card{
     .buttons{
       display: flex;
       button{
+
         font-size: 4vw;
         font-family: $Fontmain;
         height: 10vw;
@@ -51,14 +52,13 @@ div.card{
         background: transparent;
         border: transparent 1px;
         border-radius: 10px;
-        transition: border-bottom 0.5s, border-left 0.7s,border-top 1.2s, border-right 2s, background 3s;
+
       }
       button:hover{
-        border-bottom: 1px  solid white;
-        border-left:1px solid white ;
-        border-top:1px solid white;
-        border-right:1px solid white;
-        background: white;
+
+      }
+      button:active{
+        outline: rgba(54,252,181,0.91);
       }
     }
   }
@@ -111,14 +111,10 @@ div.card{
           background: transparent;
           border: transparent 1px;
           border-radius: 10px;
-          transition: border-bottom 0.5s, border-left 0.7s,border-top 1.2s, border-right 2s, background 3s;
+
         }
         button:hover{
-          border-bottom: 1px  solid white;
-          border-left:1px solid white ;
-          border-top:1px solid white;
-          border-right:1px solid white;
-          background: white;
+
         }
       }
     }
@@ -173,14 +169,11 @@ div.card{
           background: transparent;
           border: transparent 1px;
           border-radius: 10px;
-          transition: border-bottom 0.5s, border-left 0.7s,border-top 1.2s, border-right 2s, background 3s;
+
         }
         button:hover{
-          border-bottom: 1px  solid white;
-          border-left:1px solid white ;
-          border-top:1px solid white;
-          border-right:1px solid white;
-          background: white;
+
+
         }
       }
     }
@@ -234,14 +227,11 @@ div.card{
         background: transparent;
         border: transparent 1px;
         border-radius: 10px;
-        transition: border-bottom 0.5s, border-left 0.7s,border-top 1.2s, border-right 2s, background 3s;
+
       }
       button:hover{
-        border-bottom: 1px  solid white;
-        border-left:1px solid white ;
-        border-top:1px solid white;
-        border-right:1px solid white;
-        background: white;
+
+
       }
     }
   }

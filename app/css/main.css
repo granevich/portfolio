@@ -547,21 +547,14 @@ th
         width: 25vw;
         height: 10vw;
 
-        -webkit-transition: border-bottom .5s, border-left .7s,border-top 1.2s, border-right 2s, background 3s;
-                transition: border-bottom .5s, border-left .7s,border-top 1.2s, border-right 2s, background 3s; 
-
         border: transparent 1px;
         -webkit-border-radius: 10px;
-                border-radius: 10px;
+                border-radius: 10px; 
         background: transparent;
     }
-    div.card .buttons button:hover
+    div.card .buttons button:active
     {
-        border-top: 1px solid white;
-        border-right: 1px solid white;
-        border-bottom: 1px  solid white;
-        border-left: 1px solid white;
-        background: white;
+        outline: rgba(54, 252, 181, .91);
     }
 }
 
@@ -671,21 +664,10 @@ th
         width: 15vw;
         height: 5vw;
 
-        -webkit-transition: border-bottom .5s, border-left .7s,border-top 1.2s, border-right 2s, background 3s;
-                transition: border-bottom .5s, border-left .7s,border-top 1.2s, border-right 2s, background 3s; 
-
         border: transparent 1px;
         -webkit-border-radius: 10px;
-                border-radius: 10px;
+                border-radius: 10px; 
         background: transparent;
-    }
-    div.card .buttons button:hover
-    {
-        border-top: 1px solid white;
-        border-right: 1px solid white;
-        border-bottom: 1px  solid white;
-        border-left: 1px solid white;
-        background: white;
     }
 }
 
@@ -795,21 +777,10 @@ th
         width: 8vw;
         height: 3vw;
 
-        -webkit-transition: border-bottom .5s, border-left .7s,border-top 1.2s, border-right 2s, background 3s;
-                transition: border-bottom .5s, border-left .7s,border-top 1.2s, border-right 2s, background 3s; 
-
         border: transparent 1px;
         -webkit-border-radius: 10px;
-                border-radius: 10px;
+                border-radius: 10px; 
         background: transparent;
-    }
-    div.card .buttons button:hover
-    {
-        border-top: 1px solid white;
-        border-right: 1px solid white;
-        border-bottom: 1px  solid white;
-        border-left: 1px solid white;
-        background: white;
     }
 }
 
@@ -919,21 +890,10 @@ th
         width: 12vw;
         height: 3vw;
 
-        -webkit-transition: border-bottom .5s, border-left .7s,border-top 1.2s, border-right 2s, background 3s;
-                transition: border-bottom .5s, border-left .7s,border-top 1.2s, border-right 2s, background 3s; 
-
         border: transparent 1px;
         -webkit-border-radius: 10px;
-                border-radius: 10px;
+                border-radius: 10px; 
         background: transparent;
-    }
-    div.card .buttons button:hover
-    {
-        border-top: 1px solid white;
-        border-right: 1px solid white;
-        border-bottom: 1px  solid white;
-        border-left: 1px solid white;
-        background: white;
     }
 }
 

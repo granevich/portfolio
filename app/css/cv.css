@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web');
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans');
+*
+{
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+body
+{
+    padding-left: 150px !important;
+}
+
+.main_panel
+{
+    font-family: 'Titillium Web', sans-serif;
+
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display:         flex;
+    overflow: hidden;
+
+    width: 150px;
+    height: 100vh;
+    min-height: 500px;
+
+    color: white;
+    background: #27918a; 
+
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-flow: column;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+            align-items: center;
+}
+.main_panel .avatar
+{
+    width: 100px;
+    height: 100px;
+    margin-top: 75px;
+
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
+    background: url(../img/me.jpg);
+    background-size: contain;
+}
+.main_panel .navigation
+{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display:         flex;
+
+    height: 300px; 
+    margin-top: 75px;
+
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-flow: column;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+.main_panel .navigation button
+{
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 1em;
+    line-height: 1.2;
+
+    width: 150px;
+    height: 50px;
+
+    cursor: pointer;
+
+    border: transparent 1px;
+    -webkit-border-radius: 10px;
+            border-radius: 10px; 
+    background: transparent;
+}
+
+section#about
+{
+    overflow: hidden; 
+
+    min-height: 250px;
+}
+
+.about_me
+{
+    font-family: 'Titillium Web', sans-serif; 
+
+    width: 50%;
+    margin: auto;
+    padding: 5%;
+
+    text-align: center;
+}
+.about_me :first-child
+{
+    font-size: 2.5vw;
+}
+.about_me :last-child
+{
+    font-size: 2vw;
+}
+
+.bio
+{
+    font-family: 'Nunito Sans', sans-serif;
+
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display:         flex;
+
+    max-width: 90vw;
+    margin: auto;
+
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+}
+@media (min-width: 768px) and (max-width: 1023px)
+{
+    .bio
+    {
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+                justify-content: center;
+    }
+}
+.bio .text_bio
+{
+    font-size: 1.8vw;
+
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display:         flex;
+
+    width: 50vw;
+    margin-right: 6vw;
+    margin-left: 3vw;
+
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-flow: column;
+        -ms-flex-flow: column;
+            flex-flow: column;
+}
+@media (min-width: 768px) and (max-width: 1023px)
+{
+    .bio .text_bio
+    {
+        font-size: 2vw;
+        line-height: 1.1;
+    }
+}
+.bio .text_bio .name
+{
+    font-size: 5vw;
+}
+.bio .text_bio .profession
+{
+    font-size: 3.5vw;
+}
+.bio .photo
+{
+    width: 25vw;
+    height: 25vw;
+
+    -webkit-border-radius: 50%;
+            border-radius: 50%; 
+    background: #fcf3cd;
+}
+@media (min-width: 768px) and (max-width: 1023px)
+{
+    .bio .photo
+    {
+        width: 35vw;
+        height: 35vw;
+    }
+}
+.bio button
+{
+    width: 10vw;
+    height: 3vw; 
+    margin-top: 30px;
+}
+
+#about
+{
+    background-size: contain;
+}
