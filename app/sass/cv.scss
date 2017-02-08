@@ -3,6 +3,10 @@
 *{
   box-sizing: border-box;
 }
+.act{
+  background: #247E77 !important;
+  color: white;
+}
 body{
   padding-left: 150px !important;
 }
@@ -63,51 +67,60 @@ section#about{
       padding: 5%;
       font-family: $Fontmain;
       :first-child{
-        font-size: 2.5vw;
+        @include phone{
+          font-size: 3.5vw;
+        }
+        font-size: 2.1vw;
       }
       :last-child{
-        font-size: 2vw;
+        @include phone{
+          font-size: 2.1vw;
+        }
+        font-size: 1.7vw;
       }
     }
-
-
-
-
     .bio{
-     @include tablet{
-       justify-content: center;
-
-     }
+      @include phone{
+        width: 100vw;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+      }
       font-family: $Fontsecond;
       margin: auto;
-      max-width: 90vw;
+      max-width:80vw;
       display: flex;
       flex-wrap: wrap;
+      line-height: 1.6;
 
       .text_bio{
-        @include tablet{
-          font-size: 2vw;
-          line-height: 1.1;
-
+        @include phone{
+          width: 60vw;
+          font-size: 2.3vw;
         }
         margin-right: 6vw;
         margin-left: 3vw;
-        font-size: 1.8vw;
-        width: 50vw;
+        font-size: 1.3vw;
+        width: 40vw;
         display: flex;
         flex-flow: column;
         .name{
-          font-size: 5vw;
+          @include phone{
+            font-size: 5vw;
+          }
+          font-size: 3vw;
         }
         .profession{
+          @include phone{
+            font-size: 4vw;
+          }
           font-size: 3.5vw;
         }
       }
       .photo{
-        @include tablet{
-          width: 35vw;
-          height: 35vw;
-
+        @include phone{
+          width: 30vw;
+          height: 30vw;
         }
           width: 25vw;
           height: 25vw;
@@ -115,6 +128,16 @@ section#about{
           border-radius: 50%;
       }
       button{
+        @include phone{
+          width: 15vw;
+          height: 5vw;
+          font-size: 1.5vw;
+        }
+        font-size: 1vw;
+        color:white;
+        cursor: pointer;
+        border: #1b4e48 1px solid;
+        background: #1b4e48;
         margin-top: 30px;
         width: 10vw;
         height: 3vw;
@@ -126,6 +149,158 @@ section#about{
     //about me
 #about{
 
-  background-size: contain;
+ background: #45d0ca; color: #fff;
+
+}
+
+//skills
+#skills{
+  background: #eeeeee;
+  overflow: hidden;
+}
+.technical_skills{
+  margin-bottom: 10%;
+  font-family: $Fontmain;
+  :first-child{
+    @include phone{
+      font-size: 6vw;
+    }
+    @include tablet{
+      font-size: 5vw;
+    }
+    text-transform: uppercase;
+    font-size: 4vw;
+  }
+  :last-child{
+    @include phone{
+      font-size: 3vw;
+    }
+    @include tablet{
+      font-size: 2vw;
+    }
+    font-size: 2vw;
+  }
+
+  text-align: center;
+  width: 50%;
+  margin: auto;
+}
+.skills_set{
+
+  .explain{
+    text-align: center;
+  }
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+.chart{
+  position: relative;
+  span{
+    @include phone{
+        top:50%;
+        left: 43%;
+    }
+    @include tablet{
+      top:50%;
+      left: 43%;
+    }
+    font-size: 1.5vw;
+    position: absolute;
+    top:5.5vw;
+    left: 3.9vw;
+  }
+}
+canvas{
+  @include phone{
+    width:20vw;
+    height:20vw;
+  }
+  @include tablet{
+    width:15vw;
+    height:15vw;
+  }
+   width:10vw;
+   height:10vw;
+ }
+}
+//experience
+.experience_title{
+  text-align: center;
+  margin-bottom: 5%;
+  font-family: $Fontmain;
+  :first-child{
+    @include phone{
+      font-size: 6vw;
+    }
+    @include tablet{
+      font-size: 5vw;
+    }
+    text-transform: uppercase;
+    font-size: 4vw;
+  }
+  :last-child{
+    @include phone{
+      font-size: 3vw;
+    }
+    @include tablet{
+      font-size: 2vw;
+    }
+    font-size: 2vw;
+  }}
+
+.rov_work_details{
+  @include phone{
+    height: 25vw;
+  }
+  @include tablet{
+    height: 15vw;
+  }
+  -webkit-box-shadow: 10px 10px 5px 0 rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 5px 0 rgba(0,0,0,0.75);
+  box-shadow: 10px 10px 5px 0 rgba(0,0,0,0.75);
+  margin-bottom: 5vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  max-width: 70vw;
+
+  height: 15vw;
+  .time{
+    @include phone{
+      width: 20vw;
+      height: 20vw;
+      font-size: 2.5vw;
+    }
+    @include tablet{
+      width: 10vw;
+      height: 10vw;
+    }
+    font-size: 1vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 9vw;
+    height: 9vw;
+    background: #ee5f6a;
+    border-radius: 50%;
+  }
+  .abilities{
+    @include phone{
+      height: 25vw;
+      width: 50vw;
+      font-size: 1.9vw
+    }
+    @include tablet{
+      height: 15vw;
+    }
+    height: 15vw;
+    font-family: $Fontsecond;
+    font-size: 1.5vw;
+    padding: 1vw;
+    background: #d7d7d7;
+    width: 60vw;
+  }
 
 }
