@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
     <title>CV</title>
 
     <link rel="stylesheet" href="css/cv.css">
@@ -13,6 +14,7 @@
     <script src="js/jquery.onepage-scroll.min.js"></script>
     <script src="js/jquery.easypiechart.min.js"></script>
     <script src="https://use.fontawesome.com/a5b189d0ff.js"></script>
+    <script src="https://unpkg.com/isotope-layout@3.0/dist/isotope.pkgd.min.js"></script>
     <script src="js/cv.js"></script>
 </head>
 <body>
@@ -21,7 +23,6 @@
         <div class="main_panel">
             <div class="avatar"></div>
             <div class="navigation">
-
                 <button id="1" class="hvr-sweep-to-right">ABOUT</button>
                 <button id="2" class="hvr-sweep-to-right">SKILLS</button>
                 <button id="3" class="hvr-sweep-to-right">EXPERIENCE</button>
@@ -143,8 +144,52 @@
         </div>
 
         </section>
-        <section><h1>EDUCATION</h1></section>
-        <section><h1>PORTFOLIO</h1></section>
+
+
+        <section id="education">
+
+
+            <div class="education_title">
+                <div>Education</div>
+                <div>My previos associations</div>
+            </div>
+
+               <img  class="img" id="nau" src="img/logoNAU.png" alt="">
+               <img class="img" id="cisco" src="img/Cisco_logo.svg.png" alt="">
+               <img  class="img"  id='itea' src="img/logo-itea.png" alt="">
+               <img class="img" id="hillel" src="img/hillelLogo.png" alt="">
+
+        <div class="content_edu">
+            <div class="inner_content_edu">
+            </div>
+        </div>
+
+
+
+        </section>
+        <section id="portfolio">
+            <div class="portfolio_title">
+                <div>Portfolio</div>
+                <div>My previos associations</div>
+            </div>
+            <div class="buttons_portfolio">
+
+                    <button data-filter=".all">All</button>
+                    <button data-filter=".codepan">Codepan</button>
+                    <button data-filter=".comm">Commercial Projects</button>
+                    <button data-filter=".nonComm">NonCommercial Project</button>
+            </div>
+            <div class="cards grid">
+                <div class="card codepan all">1</div>
+                <div class="card codepan all">2</div>
+                <div class="card codepan all">3</div>
+                <div class="card codepan all">4</div>
+                <div class="card comm all">5</div>
+                <div class="card nonComm all">6</div>
+                <div class="card nonComm all">7</div>
+            </div>
+
+        </section>
         <section><h1>CONTACT</h1></section>
 
     </div>

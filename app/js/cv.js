@@ -2,6 +2,14 @@
  * Created by granevich on 07.02.2017.
  */
 $(document).ready(function () {
+
+
+    function show(element) {
+        console.log(element)
+    }
+
+
+
     $(".main").onepage_scroll({
         sectionContainer: "section",     // sectionContainer accepts any kind of selector in case you don't want to use section
         easing: "ease-in",                  // Easing options accepts the CSS3 easing animation such "ease", "linear", "ease-in",
@@ -30,11 +38,8 @@ $(document).ready(function () {
     });
 
     $('button').on('click', function () {
-
        var link =  +$(this).attr('id');
         $(".main").moveTo(link);
-
-
 
     });
 //chart
@@ -49,4 +54,34 @@ $(document).ready(function () {
         });
     });
 //chart
+   var img =  document.querySelectorAll('img');
+   var contentEdu = document.querySelector('.content_edu');
+   contentEdu.addEventListener('click', function (e) {
+
+      this.style.display = 'none';
+      e.stopPropagation()
+   });
+   show(contentEdu);
+   show(img);
+        for(var i=0;i<img.length;i++){
+            img[i].addEventListener('click', function () {
+                contentEdu.style.display = 'block';
+                var attr = this.getAttribute('id');
+                $('.inner_content_edu').load(attr +".html")
+            })
+        }
+
+//isotope
+
+   var $grid =  $('.grid').isotope({
+        itemSelector:'.card',
+        layoutMode: 'fitRows'
+    });
+    $('.buttons_portfolio').on( 'click', 'button', function() {
+        var filterValue = $( this ).attr('data-filter');
+        show(filterValue);
+        // use filterFn if matches value
+
+        $grid.isotope({ filter: filterValue });
+    });
  });
