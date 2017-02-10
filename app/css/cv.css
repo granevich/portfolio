@@ -941,6 +941,8 @@ section#about
 
 #portfolio
 {
+    overflow: hidden; 
+
     background: #45d0ca;
 }
 
@@ -1014,7 +1016,7 @@ section#about
     display: -ms-flexbox;
     display:         flex;
 
-    width: 600px;
+    width: 60vw;
     margin: auto;
 
     -webkit-box-orient: horizontal;
@@ -1026,6 +1028,32 @@ section#about
     -webkit-justify-content: center;
     -ms-flex-pack: center;
             justify-content: center;
+}
+.buttons_portfolio button
+{
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1vw;
+
+    width: 12vw;
+    height: 3vw;
+    margin-right: 1vw;
+
+    cursor: pointer;
+
+    border: 1px solid transparent; 
+    background: transparent !important;
+}
+.buttons_portfolio .hvr-radial-in:before
+{
+    background: #3fc2bc !important;
+}
+.buttons_portfolio .hvr-radial-in:active
+{
+    outline: none;
+}
+.buttons_portfolio button:hover
+{
+    background: darkolivegreen;
 }
 
 .cards

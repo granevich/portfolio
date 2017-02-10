@@ -506,6 +506,7 @@ canvas{
 //portfolio
 #portfolio{
   background: #45d0ca;
+  overflow: hidden;
 }
 .portfolio_title{
 
@@ -541,11 +542,31 @@ canvas{
   }}
 
 .buttons_portfolio{
-  width: 600px;
+  width: 60vw;
   margin: auto;
   display: flex;
   flex-flow: row;
   justify-content:center;
+  button{
+    cursor: pointer;
+    background: transparent !important;
+    margin-right: 1vw;
+    font-family: $Fontsecond;
+    font-size: 1vw;
+    width: 12vw;
+    height: 3vw;
+    border: 1px solid transparent;
+
+
+  }
+  .hvr-radial-in:before{
+    background: #3fc2bc !important; ;
+  } .hvr-radial-in:active{
+   outline: none;
+  }
+  button:hover{
+    background: darkolivegreen;
+  }
 }
 .cards{
   width: 100%;
