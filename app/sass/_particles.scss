@@ -2,20 +2,30 @@
 $Fontmain : 'Titillium Web', sans-serif;
 #particles-js{
   width: 100%;
-  height: 100vh;
+  height: 99vh;
   background-color: #27918a;
   //background-image: url('');
   background-size: cover;
   background-position: 50% 50%;
   background-repeat: no-repeat;
 }
+div.card_wrapper{
+  position: absolute;
+  top: 0;
+  left: 0;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+
+
+}
 div.card{
   @include tiny{
 
     display: flex;
-    position: absolute;
-    left: 10%;
-    top: 10%;
+
     flex-flow: column;
     justify-content: space-around;
     align-items: center;
@@ -71,9 +81,7 @@ div.card{
         justify-content: space-around;
       }
       display: flex;
-      position: absolute;
-      left: 25%;
-      top: 10%;
+
       flex-flow: column;
       justify-content: space-around;
       align-items: center;
@@ -128,9 +136,7 @@ div.card{
 
       }
       display: flex;
-      position: absolute;
-      left: 40%;
-      top: 10%;;
+
       flex-flow: column;
       justify-content: space-around;
       align-items: center;
@@ -187,9 +193,7 @@ div.card{
 
     }
     display: flex;
-    position: absolute;
-    left: 35%;
-    top: 10%;;
+
     flex-flow: column;
     justify-content: space-around;
     align-items: center;
