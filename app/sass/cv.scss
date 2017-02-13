@@ -542,12 +542,47 @@ canvas{
   }}
 
 .buttons_portfolio{
+  @include tiny{
+    width: 80vw;
+  }
+  @include phone {
+    width: 70vw;
+  }
+  @include  tablet{
+    width: 60vw;
+
+  }
+  @include desktop{
+    width: 60vw;
+    font-size: 0.5vw;
+  }
+  margin-bottom: 2vw;
   width: 60vw;
   margin: auto;
   display: flex;
   flex-flow: row;
   justify-content:center;
   button{
+    @include tiny{
+      width: 40vw;
+      height: 10vw;
+      font-size: 3vw;
+    }
+    @include phone {
+      width: 24vw;
+      height: 9vw;
+      font-size: 2vw;
+    }
+    @include  tablet{
+      width: 24vw;
+      height: 6vw;
+      font-size: 1.8vw;
+    }
+    @include desktop{
+      width: 90vw;
+      height: 6vw;
+      font-size: 1.5vw;
+    }
     cursor: pointer;
     background: transparent !important;
     margin-right: 1vw;
@@ -556,8 +591,6 @@ canvas{
     width: 12vw;
     height: 3vw;
     border: 1px solid transparent;
-
-
   }
   .hvr-radial-in:before{
     background: #3fc2bc !important; ;
@@ -569,16 +602,34 @@ canvas{
   }
 }
 .cards{
-  width: 100%;
-  justify-content:center;
-  flex-wrap: wrap;
+  width: 70%;
   margin: auto;
-  display: flex;
+  @include tiny{
+    width: 100%;
+  }
+  @include phone {
+    width: 95%;
+  }
+  @include  tablet{
+    width: 85%;
+  }
   .card{
-    margin: 10px;
-    width: 15vw;
-    height: 15vw;
-    background: rgba(22, 75, 69, 0.93);
-    border: 1px solid black;
+    @include tiny{
+      width: 25vw;
+      height: 25vw;
+    }
+    @include phone {
+      width: 20vw;
+      height: 20vw;
+    }
+    @include  tablet{
+      width: 15vw;
+      height: 15vw;
+    }
+    margin:1vw;
+    width: 12vw;
+    height: 12vw;
+   background: white;
+    //border: 1px solid black;
   }
 }

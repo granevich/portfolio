@@ -1018,6 +1018,7 @@ section#about
 
     width: 60vw;
     margin: auto;
+    margin-bottom: 2vw;
 
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -1028,6 +1029,36 @@ section#about
     -webkit-justify-content: center;
     -ms-flex-pack: center;
             justify-content: center;
+}
+@media (max-width: 499px)
+{
+    .buttons_portfolio
+    {
+        width: 80vw;
+    }
+}
+@media (min-width: 500px) and (max-width: 767px)
+{
+    .buttons_portfolio
+    {
+        width: 70vw;
+    }
+}
+@media (min-width: 768px) and (max-width: 1023px)
+{
+    .buttons_portfolio
+    {
+        width: 60vw;
+    }
+}
+@media (min-width: 1024px)
+{
+    .buttons_portfolio
+    {
+        font-size: .5vw; 
+
+        width: 60vw;
+    }
 }
 .buttons_portfolio button
 {
@@ -1042,6 +1073,46 @@ section#about
 
     border: 1px solid transparent; 
     background: transparent !important;
+}
+@media (max-width: 499px)
+{
+    .buttons_portfolio button
+    {
+        font-size: 3vw; 
+
+        width: 40vw;
+        height: 10vw;
+    }
+}
+@media (min-width: 500px) and (max-width: 767px)
+{
+    .buttons_portfolio button
+    {
+        font-size: 2vw; 
+
+        width: 24vw;
+        height: 9vw;
+    }
+}
+@media (min-width: 768px) and (max-width: 1023px)
+{
+    .buttons_portfolio button
+    {
+        font-size: 1.8vw; 
+
+        width: 24vw;
+        height: 6vw;
+    }
+}
+@media (min-width: 1024px)
+{
+    .buttons_portfolio button
+    {
+        font-size: 1.5vw; 
+
+        width: 90vw;
+        height: 6vw;
+    }
 }
 .buttons_portfolio .hvr-radial-in:before
 {
@@ -1058,28 +1129,59 @@ section#about
 
 .cards
 {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display:         flex; 
-
-    width: 100%;
+    width: 70%;
     margin: auto;
-
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-flex-wrap: wrap;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
+}
+@media (max-width: 499px)
+{
+    .cards
+    {
+        width: 100%;
+    }
+}
+@media (min-width: 500px) and (max-width: 767px)
+{
+    .cards
+    {
+        width: 95%;
+    }
+}
+@media (min-width: 768px) and (max-width: 1023px)
+{
+    .cards
+    {
+        width: 85%;
+    }
 }
 .cards .card
 {
-    width: 15vw;
-    height: 15vw;
-    margin: 10px;
+    width: 12vw;
+    height: 12vw;
+    margin: 1vw;
 
-    border: 1px solid black; 
-    background: rgba(22, 75, 69, .93);
+    background: white;
+}
+@media (max-width: 499px)
+{
+    .cards .card
+    {
+        width: 25vw;
+        height: 25vw;
+    }
+}
+@media (min-width: 500px) and (max-width: 767px)
+{
+    .cards .card
+    {
+        width: 20vw;
+        height: 20vw;
+    }
+}
+@media (min-width: 768px) and (max-width: 1023px)
+{
+    .cards .card
+    {
+        width: 15vw;
+        height: 15vw;
+    }
 }
