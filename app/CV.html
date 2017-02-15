@@ -13,9 +13,10 @@
             integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
             crossorigin="anonymous"></script>
     <script src="js/jquery.onepage-scroll.min.js"></script>
-    <script src="js/jquery.easypiechart.min.js"></script>
+    <!--<script src="js/jquery.easypiechart.min.js"></script>-->
     <script src="https://use.fontawesome.com/a5b189d0ff.js"></script>
     <script src="https://unpkg.com/isotope-layout@3.0/dist/isotope.pkgd.min.js"></script>
+    <script src="http://code.highcharts.com/highcharts.js"></script>
     <script src="js/cv.js"></script>
 </head>
 <body>
@@ -29,8 +30,16 @@
                 <button id="3" class="hvr-sweep-to-right">EXPERIENCE</button>
                 <button id="4" class="hvr-sweep-to-right">EDUCATION</button>
                 <button id="5" class="hvr-sweep-to-right">PORTFOLIO</button>
-                <button id="6" class="hvr-sweep-to-right">CONTACT</button>
+
             </div>
+            <div class="social">
+                <a target="_blank" href="https://www.linkedin.com/in/granevich/"><i class="fa fa-linkedin " aria-hidden="true"></i></a>
+                <a target="_blank" href="https://www.facebook.com/granevich"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+            </div>
+
+
+
+
         </div>
     </nav>
     <div class="main">
@@ -60,50 +69,8 @@
                 <div>technical skills</div>
                 <div>i can say i'm quite good at</div>
             </div>
-          <div class="skills_set">
-              <div class="chart" data-percent="70">
-                  <span>70%</span>
-                  <div class="explain">
-                      HTML
-                  </div>
-              </div>
-              <div class="chart" data-percent="70">
-                  <span>70%</span>
-                  <div class="explain">
-                      CSS
-                  </div>
-              </div>
-              <div class="chart" data-percent="65">
-                  <span>65%</span>
-                  <div class="explain">
-                        JAVASCRIPT
-                  </div>
-              </div>
-          </div>
-            <div class="skills_set">
-                <div class="chart" data-percent="15">
-                    <span>15%</span>
-                    <div class="explain">
-                       WORDPRESS
-                    </div>
-                </div>
-                <div class="chart" data-percent="15">
-                    <span>15%</span>
-                    <div class="explain">
-                        PHP
-                    </div>
-                </div>
-                <div class="chart" data-percent="15">
-                    <span>15%</span>
-                    <div class="explain">
-                        MySQL
-                    </div>
-                </div>
-            </div>
-              <!--<div class="chart" data-percent="73">JQuery</div>-->
-              <!--<div class="chart" data-percent="73">Wordpress</div>-->
-              <!--<div class="chart" data-percent="73">PHP</div>-->
-              <!--<div class="chart" data-percent="73">MySQL</div>-->
+
+            <div id="container" style="min-width: 310px; height: 400px; max-width: 600px; margin: 0 auto"></div>
 
 
         </section>
@@ -114,35 +81,7 @@
             </div>
 
 
-        <div class="rov_work_details">
-            <div class="time">
-                June 2007 - now
-            </div>
-            <div class="about_job">
 
-                <div class="abilities">
-                <div class="name_job">NRCU</div>
-                <div>Engineer</div>
-                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias animi, at consectetur culpa deleniti deserunt doloremque eaque eos, explicabo facere fugit laborum magni mollitia natus nobis possimus, repellat repudiandae voluptates.
-                </div>
-            </div>
-        </div>
-
-
-
-        <div class="rov_work_details">
-            <div class="time">
-                Desember 2012 - January 2014
-            </div>
-            <div class="about_job">
-
-                <div class="abilities">
-                    <div class="name_job">XSport</div>
-                <span>Engineer</span>
-                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias animi, at consectetur culpa deleniti deserunt doloremque eaque eos, explicabo facere fugit laborum magni mollitia natus nobis possimus, repellat repudiandae voluptates.
-                </div>
-            </div>
-        </div>
 
         </section>
 
@@ -155,9 +94,9 @@
                 <div>My previos associations</div>
             </div>
 
-               <img  class="img" id="nau" src="img/logoNAU.png" alt="">
+               <img class="img" id="nau" src="img/logoNAU.png" alt="">
                <img class="img" id="cisco" src="img/Cisco_logo.svg.png" alt="">
-               <img  class="img"  id='itea' src="img/logo-itea.png" alt="">
+               <img class="img" id='itea' src="img/logo-itea.png" alt="">
                <img class="img" id="hillel" src="img/hillelLogo.png" alt="">
 
         <div class="content_edu">
@@ -203,18 +142,41 @@
                         <p>Shows you weather forecast</p>
                  </div></a></div>
                 <div class="ih-item square effect6 bottom_to_top card codepan all"><a href="https://codepen.io/granevich/pen/VjrNpw">
-                    <div class="img"><img src="img/codepan4.JPG" alt="img"></div>
+                <div class="img"><img src="img/codepan4.JPG" alt="img"></div>
+                <div class="info">
+                    <h3>Random quote</h3>
+                    <p>Random quote by Chuck</p>
+                </div></a></div>
+                <div class="ih-item square effect6 bottom_to_top card comm all"><a href="http://granevich.com/templates/Yellow_bus/index.html">
+                <div class="img"><img src="img/YellowSchool.JPG" alt="img"></div>
+                <div class="info">
+                    <h3>YelowBus</h3>
+
+                </div></a></div>
+                <div class="ih-item square effect6 bottom_to_top card nonComm all"><a href="http://granevich.com/templates/radio/index.html">
+                <div class="img"><img src="img/radio.JPG" alt="img"></div>
+                <div class="info">
+                    <h3>UA Radio</h3>
+
+                </div></a></div>
+
+                <div class="ih-item square effect6 bottom_to_top card nonComm all"><a href="http://granevich.com/templates/jewelery/index.html#">
+                <div class="img"><img src="img/jewerly.JPG" alt="img"></div>
+                <div class="info">
+                    <h3>Jewelery</h3>
+
+                </div></a></div>
+                <div class="ih-item square effect6 bottom_to_top card nonComm all"><a href="http://granevich.com/templates/f-v2/index.html">
+                    <div class="img"><img src="img/f-v2.JPG" alt="img"></div>
                     <div class="info">
-                        <h3>Random quote</h3>
-                        <p>Random quote by Chuck</p>
+                        <h3>F-v2</h3>
+
                     </div></a></div>
-                <div class="card comm all">5</div>
-                <div class="card nonComm all">6</div>
-                <div class="card nonComm all">7</div>
+
             </div>
 
         </section>
-        <section><h1>CONTACT</h1></section>
+
 
     </div>
 
